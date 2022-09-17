@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Keywords" Content="英语,3500词,黎语">
+    <meta name="Description" Content="黎语 - 外语学习助手">
+    <title>黎语 - 外语学习助手</title>
+    <link rel="stylesheet" href="style.css">
+    <link type="favicon" rel="shortcut icon" href="favicon.ico" />
+    <div class="header">
+        <img src="logo.png" alt="logo" id="logo">
+        <p class="text1">黎语 - 免费的外语学习助手</p>
+    </div>
+    <script src="jquery.min.js"></script>
+    <script>
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?ff096ed212d8bf306d6ae1138a7ff946";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+<!-- Styles -->
+<link rel="stylesheet" href="bootstrap.min.css" />
+<link rel="stylesheet" href="select2.min.css" />
+<link rel="stylesheet" href="select2-bootstrap-5-theme.min.css" />
+
+<!-- Scripts -->
+<script src="jquery.slim.min.js"></script>
+<script src="bootstrap.bundle.min.js"></script>
+<script src="select2.min.js"></script>
+
+</head>
+
+<body>
+    <br><br><br>
+    <center>
+        <form action="">
+            <select name="select" id="select" class="select" style="width: 50%">
+                <option value="start.html">英语3500词</option>
+                <option value="ra7-1.html">仁爱版七上</option>
+                <option value="ra7-2.html">仁爱版七下</option>
+                <option value="ra8-1.html">仁爱版八上</option>
+                <option value="ra8-2.html">仁爱版八下</option>
+                <option value="ra9-1.html">仁爱版九上</option>
+                <option value="ra9-2.html">仁爱版九下</option>
+            </select>
+        </form>
+          <script>$(".select").select2({
+            theme: "bootstrap-5",
+			minimumResultsForSearch: Infinity
+          });</script>
+        <script>
+            function select(){
+                var select=document.getElementById("select");
+                var index=select.options[select.selectedIndex].value;
+                window.location.href=index;
+            }
+        </script>
+        <br>
+        <center><span class="line1"></span><span class="line2"></span><span
+                    class="button move" onclick="select()">start</span></center>
+        <br><br><br>
+</body>
+<footer>
+    <p>一个完全免费的外语学习工具网页，用于单词的复习与记忆。<br>横屏浏览更方便~</p>
+    <p>域名已更换，旧域名将停用。</p>
+</footer>
+</html>

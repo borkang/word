@@ -1,0 +1,38 @@
+.button {
+    width: 10%;
+    height: auto;
+}
+
+.word {
+    /* font-size: 35%; */
+    text-align: center;
+    width: 100%;
+    /* height: 200px; */
+    display: inline-block
+}
+
+.meaning {
+    /* font-size: 20%; */
+    text-align: center;
+    width: 100%;
+    display: inline-block
+}
+
+word {
+    font-family: 'Microsoft YaHei UI Light';
+    color: rgb(0, 0, 0);
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.img {
+    text-align: center;
+    letter-spacing: 80px;
+}
+
+.possess {
+    text-align: center;
+    /* font-size: 10%; */
+    font-family: 'Microsoft YaHei UI Light';
+    color: rgb(0, 0, 0);
+}
